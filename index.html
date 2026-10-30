@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Store — Plataforma Digital de Jogos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="brand-logo">NX</span>
+                <div>
+                    <h1>NEXUS STORE</h1>
+                    <span class="brand-subtitle">Distribuição Digital & Chaves Oficiais</span>
+                </div>
+            </div>
+            <div class="promo-pill">
+                <span class="dot"></span> Promoção Ativa: 10% OFF acima de R$ 200
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="hero-tag">CATÁLOGO OFICIAL 2026</span>
+                <h2>Sua biblioteca de jogos de nova geração</h2>
+                <p>Acesso imediato a títulos originais para PC e Consoles. Selecione seus jogos no simulador ao lado e calcule seu desconto automaticamente.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-layout">
+        <!-- Coluna da Esquerda: Catálogo em Lista Horizontal -->
+        <section class="catalogo">
+            <div class="section-header">
+                <h3>Catálogo Disponível</h3>
+                <span class="contador">3 títulos em destaque</span>
+            </div>
+
+            <div class="lista-jogos">
+                <article class="jogo-item">
+                    <div class="jogo-capa capa-cyber">
+                        <span>⚔️</span>
+                    </div>
+                    <div class="jogo-info">
+                        <div class="jogo-meta">
+                            <span class="badge">RPG de Ação</span>
+                            <span class="plataforma">PC / PS5 / Xbox</span>
+                        </div>
+                        <h4>CyberQuest: Neon City</h4>
+                        <p>Explore uma metrópole futurista em mundo aberto, personalize implantes cibernéticos e domine missões táticas.</p>
+                    </div>
+                    <div class="jogo-preco-box">
+                        <span class="label-preco">Valor unitário</span>
+                        <span class="preco">R$ 150,00</span>
+                    </div>
+                </article>
+
+                <article class="jogo-item">
+                    <div class="jogo-capa capa-drift">
+                        <span>🏎️</span>
+                    </div>
+                    <div class="jogo-info">
+                        <div class="jogo-meta">
+                            <span class="badge">Simulador / Corrida</span>
+                            <span class="plataforma">PC / Consoles</span>
+                        </div>
+                        <h4>Turbo Drift Legends</h4>
+                        <p>Mais de 80 carros licenciados, física realista em pistas noturnas sob chuva e campeonatos multiplayer online.</p>
+                    </div>
+                    <div class="jogo-preco-box">
+                        <span class="label-preco">Valor unitário</span>
+                        <span class="preco">R$ 90,00</span>
+                    </div>
+                </article>
+
+                <article class="jogo-item">
+                    <div class="jogo-capa capa-pixel">
+                        <span>👾</span>
+                    </div>
+                    <div class="jogo-info">
+                        <div class="jogo-meta">
+                            <span class="badge">Indie / Roguelike</span>
+                            <span class="plataforma">PC / Switch</span>
+                        </div>
+                        <h4>Pixel Dungeon Souls</h4>
+                        <p>Enfrente chefes desafiadores em masmorras geradas proceduralmente com direção de arte retrô e trilha orquestrada.</p>
+                    </div>
+                    <div class="jogo-preco-box">
+                        <span class="label-preco">Valor unitário</span>
+                        <span class="preco">R$ 60,00</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Coluna da Direita: Painel Lateral de Checkout -->
+        <aside class="painel-checkout">
+            <div class="checkout-card">
+                <div class="checkout-header">
+                    <h3>Terminal de Simulação</h3>
+                    <p>Siga as instruções abaixo para calcular seu pedido</p>
+                </div>
+
+                <ol class="passos-lista">
+                    <li>
+                        <span class="passo-num">01</span>
+                        <div>Clique no botão <strong>"Simular compra"</strong> abaixo.</div>
+                    </li>
+                    <li>
+                        <span class="passo-num">02</span>
+                        <div>Informe a quantidade desejada de cada jogo na janela do navegador (digite <strong>0</strong> para pular um título).</div>
+                    </li>
+                    <li>
+                        <span class="passo-num">03</span>
+                        <div>Confira o recibo detalhado com cálculo de subtotal, validação de desconto e valor final.</div>
+                    </li>
+                </ol>
+
+                <div class="regra-desconto">
+                    <strong>Regra de Desconto Automático</strong>
+                    <p>Pedidos com subtotal igual ou superior a <strong>R$ 200,00</strong> recebem <strong>10% de desconto</strong> imediato no fechamento.</p>
+                </div>
+
+                <button onclick="simularCompra()" class="btn-simular">
+                    Simular compra
+                </button>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p><strong>NEXUS STORE</strong> — Projeto desenvolvido por <strong>Matheus Conceição Silva</strong></p>
+            <p class="footer-meta">Desafio 1: Minha Loja • Programa Trilhas Inova 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
